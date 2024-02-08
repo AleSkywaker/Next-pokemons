@@ -21,7 +21,7 @@ export default async function PokemonPage() {
   const pokemons = await getPokemons();
   return (
     <div className='flex flex-col'>
-      <span className='text-4xl my-2 text-center'>Listado de Pokemons <small>estatico</small></span>
+      <span className='text-4xl my-2 text-center'>Listado de Pokemons <small className='text-blue-500'>estatico</small></span>
       <PokemonsGrid pokemons={pokemons} />
     </div>
   );
